@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 520px;
+    background: url(./images/Group\ 69.png) center/cover no-repeat;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.toggle,
+.profile {
+    width: 47;
+    height: 21;
+    top: 29.5px;
+    left: 1301px;
+    angle: 0 deg;
+    opacity: 1;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(transparent, #f5f5f5);
+}
+
+
+.slider {
+    position: relative;
+
+    margin-top: -210px;
+    z-index: 5;
+}
+
+.slider-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.slider-row img {
+    width: 130px;
+    border-radius: 10px;
+}
+
+.movies {
+    margin-top: 70px;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.pearls {
+    margin-top: 80px;
+    background: white;
+    padding: 60px;
+}
+
+.timeline {
+    display: flex;
+    gap: 50px;
+    margin: 25px 0;
+    color: #999;
+}
+
+.pearls-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.pearls-content img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.about {
+    margin-top: 70px;
+    display: flex;
+    padding-left: 50px;
+    gap: 180px;
+    align-items: center;
+}
+
+.about img {
+    width: 420px;
+    border-radius: 10px;
+}
+
+.news {
+    margin-top: 80px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.news-big img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-png {
+    border-radius: 15px;
+    width: 545px;
+}
+
+.news-text {
+    margin-top: 15px;
+}
+
+.news-list {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+footer {
+    padding-top: 100px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 46.45px;
+    padding-top: 35px;
+}
+
+.footer-card p {
+    display: flex;
+    flex-direction: column;
+    padding-top: 34px;
+    gap: 15px;
+}
+
+.footer-card-4-card {
+    padding-top: 36px;
+    gap: 21px;
+    display: flex;
+}
+.footer-bottom{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-card-4-card{
+    display: flex;
+    align-items: center;
+}
+.section-img{
+    width: 287px;
+}
+a{
+    text-decoration: none;
+}
+/*  */
+/*  */
+.registratsiya{
+    background-image: url(./image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* modal */
+.modal {
+    width: 420px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* inputs */
+.modal label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.modal input,
+.modal select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* row */
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.row input {
+    flex: 1;
+}
+
+/* prefix */
+.prefix {
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* buttons */
+.small-btn {
+    padding: 10px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.main-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* checkbox */
+.check {
+    margin-top: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.loader {
+  --main-size: 4em;
+  --text-color: #ffffff;
+  --shine-color: #ffffff40;
+  --shadow-color: #aaaaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+  font-size: var(--main-size);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--text-color);
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  filter: drop-shadow(0 0 0.05em var(--shine-color));
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: noneanimatsiya 1s 1s linear forwards;
+}
+
+.loader .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.loader .text:nth-child(1) {
+  clip-path: polygon(0% 0%, 11.11% 0%, 11.11% 100%, 0% 100%);
+  font-size: calc(var(--main-size) / 20);
+  margin-left: -2.1em;
+  opacity: 0.6;
+}
+
+.loader .text:nth-child(2) {
+  clip-path: polygon(11.11% 0%, 22.22% 0%, 22.22% 100%, 11.11% 100%);
+  font-size: calc(var(--main-size) / 16);
+  margin-left: -0.98em;
+  opacity: 0.7;
+}
+
+.loader .text:nth-child(3) {
+  clip-path: polygon(22.22% 0%, 33.33% 0%, 33.33% 100%, 22.22% 100%);
+  font-size: calc(var(--main-size) / 13);
+  margin-left: -0.33em;
+  opacity: 0.8;
+}
+
+.loader .text:nth-child(4) {
+  clip-path: polygon(33.33% 0%, 44.44% 0%, 44.44% 100%, 33.33% 100%);
+  font-size: calc(var(--main-size) / 11);
+  margin-left: -0.05em;
+  opacity: 0.9;
+}
+
+.loader .text:nth-child(5) {
+  clip-path: polygon(44.44% 0%, 55.55% 0%, 55.55% 100%, 44.44% 100%);
+  font-size: calc(var(--main-size) / 10);
+  margin-left: 0em;
+  opacity: 1;
+}
+
+.loader .text:nth-child(6) {
+  clip-path: polygon(55.55% 0%, 66.66% 0%, 66.66% 100%, 55.55% 100%);
+  font-size: calc(var(--main-size) / 11);
+  margin-left: 0.05em;
+  opacity: 0.9;
+}
+
+.loader .text:nth-child(7) {
+  clip-path: polygon(66.66% 0%, 77.77% 0%, 77.77% 100%, 66.66% 100%);
+  font-size: calc(var(--main-size) / 13);
+  margin-left: 0.33em;
+  opacity: 0.8;
+}
+
+.loader .text:nth-child(8) {
+  clip-path: polygon(77.77% 0%, 88.88% 0%, 88.88% 100%, 77.77% 100%);
+  font-size: calc(var(--main-size) / 16);
+  margin-left: 0.98em;
+  opacity: 0.7;
+}
+
+.loader .text:nth-child(9) {
+  clip-path: polygon(88.88% 0%, 100% 0%, 100% 100%, 88.88% 100%);
+  font-size: calc(var(--main-size) / 20);
+  margin-left: 2.1em;
+  opacity: 0.6;
+}
+
+.loader .text span {
+  animation:
+    scrolling 2s cubic-bezier(0.1, 0.6, 0.9, 0.4) infinite,
+    shadow 2s cubic-bezier(0.1, 0.6, 0.9, 0.4) infinite;
+}
+
+.loader .text:nth-child(1) span {
+  background: linear-gradient(to right,
+      var(--text-color) 4%,
+      var(--shadow-color) 7%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .text:nth-child(2) span {
+  background: linear-gradient(to right,
+      var(--text-color) 9%,
+      var(--shadow-color) 13%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .text:nth-child(3) span {
+  background: linear-gradient(to right,
+      var(--text-color) 15%,
+      var(--shadow-color) 18%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .text:nth-child(4) span {
+  background: linear-gradient(to right,
+      var(--text-color) 20%,
+      var(--shadow-color) 23%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .text:nth-child(6) span {
+  background: linear-gradient(to right,
+      var(--shadow-color) 29%,
+      var(--text-color) 32%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .text:nth-child(7) span {
+  background: linear-gradient(to right,
+      var(--shadow-color) 34%,
+      var(--text-color) 37%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .text:nth-child(8) span {
+  background: linear-gradient(to right,
+      var(--shadow-color) 39%,
+      var(--text-color) 42%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .text:nth-child(9) span {
+  background: linear-gradient(to right,
+      var(--shadow-color) 45%,
+      var(--text-color) 48%);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader .line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 0.05em;
+  width: calc(var(--main-size) / 2);
+  margin-top: 0.9em;
+  border-radius: 0.05em;
+}
+
+.loader .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--text-color);
+  opacity: 0.3;
+}
+
+.loader .line::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 0.05em;
+  transform: translateX(-90%);
+  animation: wobble 2s cubic-bezier(0.5, 0.8, 0.5, 0.2) infinite;
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateX(-90%);
+  }
+
+  50% {
+    transform: translateX(90%);
+  }
+
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    background-position: -98% 0;
+  }
+
+  100% {
+    background-position: 102% 0;
+  }
+}
+
+@keyframes noneanimatsiya {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+
+  }
+}
